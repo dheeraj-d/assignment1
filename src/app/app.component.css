@@ -1,7 +1,8 @@
   body{
       background-color: #3f085b;
       width:414px;
-      height:767px;
+      height:900px;
+      /*767*/
   }
   .boldf{
     font-weight: bold;
@@ -81,6 +82,16 @@
       margin-right:auto;
       border:0px;
     }
+    .buttonpos3{
+      background-color:#5d0c8b;
+      width:22%;
+      padding:16px;
+      color: white;
+      margin:16px 0px;
+      margin-left:auto;
+      margin-right:auto;
+      border:0px;
+    }
     .buttonpos1:hover{
       box-shadow: 0 10px 10px 0 rgba(0,0,0,0.24),0 10px 20px 0 #2e1c3f;
     }
@@ -93,4 +104,7 @@
       padding: 5px 20px;
       text-decoration: none;
       display: block;
+    }
+    .colouring{
+      color:#ae9cd8;
     }

@@ -3,6 +3,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
+    
     <div>
         <p><br></p>
     </div>
@@ -12,12 +13,12 @@
             ROP Member Login
         </div>
         <div >
-            <img class="thailogo" src="assets/imgs/airthailogo.jpg" alt="ThaiAirways Logo" width=32% height=22%>
+            <img class="thailogo" src='assets/imgs/airthailogo.jpg' alt="ThaiAirways Logo" id="dynamicimg" width="200px" height="200px">
         </div>
         <form >
             <div class="inpdiv">
                 <i class="fa fa-envelope iconstyle"></i>
-                <input class="inpfield boldf" type="text" size="26" placeholder="Membership Number" />
+                <input class="inpfield boldf" id="memnum" type="text" size="26" placeholder="Membership Number" />
             </div>
             <div class="inpdiv">
                 <i class="fa fa-key iconstyle"></i>
@@ -27,11 +28,19 @@
                 <p>Forgot Password?</p>
             </div>
             <div class='buttonstyle'>
-                <button class='buttonpos1 '>ROP MEMBER LOGIN</button>
+                <button class='buttonpos1'>ROP MEMBER LOGIN</button>
             </div>
             <div class='buttonstyle'>
                 <button class='buttonpos2 boldf'>REGISTER</button>
             </div>
         </form>
+    </div>
+    <div>
+        <div class="colouring">
+            <h2>select an image</h2>
+            <input type="file" id="imgfile" (change)="gtevent($event)">
+            <button class='buttonpos3' type="button" (click)="onFileUpload()">Upload</button>
+        </div>
+        <div id="fileDisplayArea"></div>
     </div>
 </body>
